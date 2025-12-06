@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather App</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="preloader hidden" id="preloader">
+        <div class="spinner"></div>
+            <p>Loading...</p>
+    </div>
+
+    <div class="container">
+        <div class="SearchCity" id="SearchCity">
+            <input type="text" id="cityName" placeholder="Enter City Name" spellcheck="false">
+            <button id="getWeatherBtn"><img id="getWeatherImg" src="images/search.png"></button>
+        </div>
+
+        <div class="unitToggeleContainer">
+            <label class="switch">
+                <input type="checkbox" id="unitToggle">
+                <span class="slider"></span>
+            </label>
+            <span class="unitLabel" id="unitLabel">°F</span>
+        </div>
+        
+       <div class="error-message"></div>
+        <div class="displayWeather" id="displayWeather"></div>
+        <div class="forecastContainer" id="forecastContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
